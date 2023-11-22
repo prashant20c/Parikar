@@ -161,6 +161,13 @@ export default class LoadRecipe {
         main.appendChild(directionLink)
     }
 
+    
+    /**
+     * 
+     * @param {recipe id from local storage} id 
+     * @returns the recipe descrtiption in recipe-container
+     */
+
     _localRecipe(id) {
 
         let data = JSON.parse(window.sessionStorage.getItem('bookmarks'))

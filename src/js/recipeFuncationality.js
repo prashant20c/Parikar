@@ -3,6 +3,8 @@ import convertTofraction from "./fractionFun";
 
 
 
+
+
 export default class RecipeFunctions {
     recipeContainer = document.querySelector('.recipe')
     servingInfo = document.querySelector('.serving-info')
@@ -16,6 +18,12 @@ export default class RecipeFunctions {
 
     perviousCount;
     newServingCount;
+
+    /**
+     * 
+     * @param {object} recipe 
+     * @param {function from loadingrecipe} displayIngs  expect object.
+     */
 
 
 
@@ -32,10 +40,9 @@ export default class RecipeFunctions {
         this.bookmark_SessionStorage = this._loadSession()
 
         this._checkAndMarkBookmarks()
-        // this.ings.forEach(element => {
-        //     element.addEventListener('change', () => this._convertTofraction(+element.innerText).bind(this));
-        // });
+        
     }
+    
 
     _increaseServing() {
         console.log('haha')

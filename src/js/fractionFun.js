@@ -8,3 +8,4 @@ import { fraction } from "mathjs";
     let output = `${realNum == 0 ? '' : realNum} ${fractionValue.n}/${fractionValue.d}`
     return output
 }
+
