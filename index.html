@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script defer src="https://kit.fontawesome.com/63a5ceccb7.js" crossorigin="anonymous"></script>
+  <script defer type="module" src="src/main.js"></script>
+  <title>Vite App</title>
+</head>
+
+<body>
+  <dialog class="dialog" >
+    <div class="dialog-container">
+      <i class="fa-solid fa-xmark"></i>
+    <div class="form-container">
+        <form class="recipe-data">
+            <label> Title
+                <input class="addRecipe-title" type="text" placeholder="Title of recipe" required>
+            </label>
+
+            <label> URL
+                <input class="addRecipe-url" type="url" placeholder="URL of Direction" required>
+            </label>
+
+            <label> Image URL
+                <input class="addRecipe-image" type="url" placeholder="http://URLaddress" required>
+            </label>
+
+            <label> Publisher
+                <input class="addRecipe-publisher" type="text" placeholder="Publisher Name" required>
+            </label>
+
+            <label> Prep Time
+                <input class="addRecipe-time" type="number" placeholder="In minutes" required >
+            </label>
+
+            <label> Servings
+                <input class="addRecipe-serving" type="number" placeholder="Serving Count" required>
+            </label>
+        </form>
+        <form class="ingredients-data">
+            <label class="addRecipe-ings "> Ingredients <span class="ings-num">1</span>
+                <input class="ings 1" placeholder="Format: 'Quantity,Unit,Description'" required>
+            </label>
+
+            <button class="addIngs" type="button"><i class="fa-solid fa-add">Add Ingredients</i></button>
+        </form>
+    </div>
+    <button class="upload" type="submit">Upload</button>
+    </div>
+    
+</dialog>
+
+  <div class="app">
+   
+  
+
+    <div class="nav">
+      <div class="logo-name"><img src="logo.jpg"></div>
+      <div class="search-field">
+        <input type="search" class="search">
+        <button class="search-button" type="submit"><i class="fa-solid fa-search"></i> Search</button>
+      </div>
+      <div class="addRecipe-btn"><i class="fa-solid fa-pen-to-square">Add Recipe</i></div>
+
+      
+
+      <div class="bookmark">
+        <i class="fa-solid fa-bookmark fa-bounce" style="color:red;"></i>
+        <div class="bookmark-table hidden"></div>
+      </div>
+
+
+    </div>
+
+    <div class="recipe-container">
+      <div class="search-container">
+        <div class="search-result">Type recipe name to search!</div>
+        <div class="pagenation  hidden">
+          <button class="btn-prev ">page <span class="prev-number">x</span></button>
+          <div class="current-page ">page <span class="current-number">1</span></div>
+          <button class="btn-next ">page <span class="next-number">2</span></button>
+        </div>
+      </div>
+      <div class="recipe"> </div>
+
+    </div>
+  </div>
+</body>
+
+</html>
